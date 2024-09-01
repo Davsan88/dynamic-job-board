@@ -1,7 +1,7 @@
 import React from 'react'
 
 const JobBoard = () => {
-    const jobCount = 4
+    const jobCount = 4  // Declare a variable to hold the current number of jobs
     const companyName = 'The Barn LTD'
 
     function getJobMessage() {
