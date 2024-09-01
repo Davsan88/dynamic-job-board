@@ -11,6 +11,7 @@ const JobBoard = () => {
         `No jobs available at ${companyName}`
     }
 
+    // Function to calculate the expected number of jobs for next week
     function expectedJobs() {
         return `Number of Jobs expected for Nex Week: ${jobCount * 1.5}`
     }
