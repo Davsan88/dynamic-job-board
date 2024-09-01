@@ -10,10 +10,15 @@ const JobBoard = () => {
         `No jobs available at ${companyName}`
     }
 
+    function expectedJobs() {
+        return `Number of Jobs expected for Nex Week: ${jobCount * 1.5}`
+    }
+
   return (
     <div>
         <h3>Jobs Updates for {companyName}: </h3>
         <p>{getJobMessage()}</p>
+        <p>{expectedJobs()}</p>
     </div>
   )
 }
