@@ -4,6 +4,7 @@ const JobBoard = () => {
     const jobCount = 4  // Declare a variable to hold the current number of jobs
     const companyName = 'The Barn LTD'  // Declare a variable to hold the company name
 
+    // Function to generate a message based on the number of jobs
     function getJobMessage() {
     return jobCount !== 0 ? 
         `Number of jobs available at ${companyName} is ${jobCount}` : 
