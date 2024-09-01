@@ -21,6 +21,7 @@ const JobBoard = () => {
         <h3>Jobs Updates for {companyName}: </h3>
         {/* Display the job message */}
         <p>{getJobMessage()}</p>
+        {/* Display the expected jobs for next week */}
         <p>{expectedJobs()}</p>
     </div>
   )
