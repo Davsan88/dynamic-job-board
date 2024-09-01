@@ -19,6 +19,7 @@ const JobBoard = () => {
   return (
     <div>
         <h3>Jobs Updates for {companyName}: </h3>
+        {/* Display the job message */}
         <p>{getJobMessage()}</p>
         <p>{expectedJobs()}</p>
     </div>
