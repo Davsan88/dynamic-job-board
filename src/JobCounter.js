@@ -12,7 +12,7 @@ const JobCounter = () => {
     <div>
       <h1>Job Applications</h1>
       <p>Job Applications Count: {jobCount}</p>
-      <button onClick={handleAddJob>Apply!!!</button>
+      <button onClick={handleAddJob}>Apply!!!</button>
     </div>
   )
 }
