@@ -1,6 +1,8 @@
 import React from 'react'
 
 const JobCounter = () => {
+     // Disclaimer: This example shows the limitation of using regular variables in React.
+    // The job count updates in the console but doesn't reflect on the screen.
     let jobCount = 0    
     
     const handleAddJob = () => {
