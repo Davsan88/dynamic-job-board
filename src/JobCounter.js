@@ -6,6 +6,7 @@ const JobCounter = () => {
   return (
     <div>
       <h1>Job Counter</h1>
+      <p>Current Job Count</p>
     </div>
   )
 }
