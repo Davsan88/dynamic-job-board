@@ -1,10 +1,9 @@
-import React from 'react'
-import useState from 'react'
+import React, { useState } from 'react'
 
 const JobCounter = () => {
      // Disclaimer: This example shows the limitation of using regular variables in React.
     // The job application count updates in the console but doesn't reflect on the screen.
-    let jobCount = 0    // Variable to track the job application count
+    const [jobCount, setJobCount] = useState(0)    // Variable to track the job application count
     
     // Function to handle the "Apply!!!" button click
     const handleAddJob = () => {
