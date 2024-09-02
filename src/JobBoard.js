@@ -18,7 +18,7 @@ const JobBoard = () => {
 
   return (
     <div>
-        <h3>Jobs Updates for {companyName}: </h3>
+        <h2>Jobs Updates for {companyName}: </h2>
         {/* Display the job message */}
         <p>{getJobMessage()}</p>
         {/* Display the expected jobs for next week */}
