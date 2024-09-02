@@ -2,11 +2,16 @@ import React from 'react'
 
 const JobCounter = () => {
     let jobCount = 0    
+    
+    function handleAddJob() {
+
+    }
 
   return (
     <div>
-      <h1>Job Counter</h1>
-      <p>Current Job Count</p>
+      <h1>Job Applications</h1>
+      <p>Job Applications Count</p>
+      <button>Apply!!!</button>
     </div>
   )
 }
