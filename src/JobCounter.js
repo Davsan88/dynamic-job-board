@@ -14,8 +14,8 @@ const JobCounter = () => {
   return (
     <div>
       <h2>Job Applications</h2>
-      <p>Job Applications Count: {jobCount}</p>
-      <button onClick={handleAddJob}>Apply!!!</button>
+      <p>Job Applications Count: {jobCount}</p>  {/* Display the job application count */}
+      <button onClick={handleAddJob}>Apply!!!</button>  {/* Button to add a job application*/}
     </div>
   )
 }
