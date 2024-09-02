@@ -6,7 +6,7 @@ const JobCounter = () => {
     
     // Function to handle the "Apply!!!" button click
     const handleAddJob = () => {
-        jobCount += 1  // Increment the job application count
+        setJobCount(jobCount + 1)  // Increment the jobCount state
         console.log('Job Application Count:', jobCount)  // Log the updated job application count
     }
 
