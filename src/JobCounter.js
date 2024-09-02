@@ -1,4 +1,5 @@
 import React from 'react'
+import useState from 'react'
 
 const JobCounter = () => {
      // Disclaimer: This example shows the limitation of using regular variables in React.
