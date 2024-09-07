@@ -17,7 +17,9 @@ const JobCounter = () => {
     }
 
     // Function to reset the "Job Applications Count" to "zero"
-
+    const resetJobCount = () => {
+      setJobCount(0)
+    }
 
   return (
     <div>
@@ -25,7 +27,7 @@ const JobCounter = () => {
       <p>Job Applications Count: {jobCount}</p>  {/* Display the job application count */}
       <button onClick={handleAddJob}>Apply!!!</button>  {/* Button to add a job application*/}
       <button onClick={removeJob}>Delete a Job</button>  {/* Button to remove a job application*/}
-      <button onClick={resetJobCount}></button>
+      <button onClick={resetJobCount}>Reset Job Count</button>
     </div>
   )
 }
