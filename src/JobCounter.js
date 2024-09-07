@@ -11,8 +11,8 @@ const JobCounter = () => {
     }
 
     const removeAddJob = () => {
-      setJobCount(jobCount - 1)
-      console.log('Job Application Count: ', jobCount - 1)
+      setJobCount(jobCount - 1)  
+      console.log('Job Application Count: ', jobCount - 1)  // Log the updated job application count
 
     }
 
