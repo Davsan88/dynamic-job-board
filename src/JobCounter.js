@@ -18,7 +18,7 @@ const JobCounter = () => {
 
     // Function to reset the "Job Applications Count" to "zero"
     const resetJobCount = () => {
-      setJobCount(0)
+      setJobCount(0)  // Reset the jobCount state
     }
 
   return (
