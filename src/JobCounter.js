@@ -16,6 +16,9 @@ const JobCounter = () => {
       console.log('Job Application Count: ', jobCount - 1)  // Log the updated job application count
     }
 
+    // Function to reset the "Job Applications Count" to "zero"
+    
+
   return (
     <div>
       <h2>Job Applications</h2>
