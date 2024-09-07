@@ -12,6 +12,7 @@ const JobCounter = () => {
 
     const removeAddJob = () => {
       setJobCount(jobCount - 1)
+
     }
 
   return (
@@ -19,6 +20,7 @@ const JobCounter = () => {
       <h2>Job Applications</h2>
       <p>Job Applications Count: {jobCount}</p>  {/* Display the job application count */}
       <button onClick={handleAddJob}>Apply!!!</button>  {/* Button to add a job application*/}
+      <button onClick={removeAddJob}>Delete a Job</button>
     </div>
   )
 }
