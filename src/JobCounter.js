@@ -10,10 +10,10 @@ const JobCounter = () => {
         console.log('Job Application Count:', jobCount + 1)  // Log the updated job application count
     }
 
+    // Function to handle the "Delete" button click
     const removeAddJob = () => {
       setJobCount(jobCount - 1)  // Decrease the jobCount state
       console.log('Job Application Count: ', jobCount - 1)  // Log the updated job application count
-
     }
 
   return (
