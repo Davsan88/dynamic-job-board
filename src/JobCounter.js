@@ -32,7 +32,7 @@ const JobCounter = () => {
       if (jobCount > 5) return "Many jobs available"
     }
 
-
+    // Toggles the environment between "Street Ops" and "Investigations"
     const toggleEnvironment = () => {
       setEnvironment(environment === "Street Ops" ? "Investigations" : "Street Ops.")
     }
