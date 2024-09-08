@@ -24,6 +24,7 @@ const JobCounter = () => {
       console.log('Job Application Count:', 0)  // Log the updated job application count
     }
 
+    // Function to check jobCount and return different messages based on its value
     const getJobMessage = () => {
       if (jobCount === 0) return "No jobs available"
       if (jobCount > 0 && jobCount <= 5) return "Few jobs available"
