@@ -24,6 +24,10 @@ const JobCounter = () => {
       console.log('Job Application Count:', 0)  // Log the updated job application count
     }
 
+    const getJobMessage = () => {
+      if (jobCount === 0) return "No jobs available"
+    }
+
   return (
     <div>
       <h2>Job Applications</h2>
