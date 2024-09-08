@@ -31,14 +31,20 @@ const JobCounter = () => {
       if (jobCount > 5) return "Many jobs available"
     }
 
+    const [environment, setEnvironment] = useState("Street Ops")
+
+    const toggleEnvironment = () => {
+      setEnvironment(environment === "Street Ops" ? "Investigations" : "Street Ops.")
+    }
+
   return (
     <div>
       <h2>Job Applications</h2>
       <p>Job Applications Count: {jobCount}</p>  {/* Display the job application count */}
+      <p>{getJobMessage()}</p>  {/* Display job message based on count */}
       <button onClick={handleAddJob}>Apply!!!</button>  {/* Button to add a job application*/}
       <button onClick={removeJob}>Delete a Job</button>  {/* Button to remove a job application*/}
       <button onClick={resetJobCount}>Reset Job Count</button>  {/* Button to reset the job applications count */}
-      <p>{getJobMessage()}</p>  {/* Display job message based on count */}
     </div>
   )
 }
