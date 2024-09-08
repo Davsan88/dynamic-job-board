@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
 const JobCounter = () => {
-    // Initialize jobCount state with 0
-    const [jobCount, setJobCount] = useState(0)    
+  // Initialize jobCount state with 0
+  const [jobCount, setJobCount] = useState(0)    
+  const [environment, setEnvironment] = useState("Street Ops")  // New state for environment
     
     // Function to handle the "Apply!!!" button click
     const handleAddJob = () => {
@@ -31,7 +32,6 @@ const JobCounter = () => {
       if (jobCount > 5) return "Many jobs available"
     }
 
-    const [environment, setEnvironment] = useState("Street Ops")
 
     const toggleEnvironment = () => {
       setEnvironment(environment === "Street Ops" ? "Investigations" : "Street Ops.")
