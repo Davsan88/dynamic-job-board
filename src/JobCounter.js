@@ -26,6 +26,7 @@ const JobCounter = () => {
 
     const getJobMessage = () => {
       if (jobCount === 0) return "No jobs available"
+      if (jobCount > 0 && jobCount <= 5) return "Few jobs available"
     }
 
   return (
