@@ -5,6 +5,10 @@ export const DynamicForm = () => {
     const [submittedTasks, setSubmittedTasks] = useState([])
 
     const handleReset = () => setInputValue('')
+    
+    const handleSubmit = () => {
+        setSubmittedTasks([...submittedTasks, inputValue])
+    }
 
     console.log('Component rendered with input:', inputValue)
   
