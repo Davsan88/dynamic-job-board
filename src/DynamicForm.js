@@ -8,6 +8,7 @@ export const DynamicForm = () => {
     
     const handleSubmit = () => {
         setSubmittedTasks([...submittedTasks, inputValue])
+        setInputValue('')
     }
 
     console.log('Component rendered with input:', inputValue)
