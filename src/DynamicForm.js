@@ -23,6 +23,7 @@ export const DynamicForm = () => {
             />
             <br/>
             <p>Task: {inputValue}</p>
+            <button onClick={handleSubmit}>Submit</button>
             <button onClick={handleReset}>Reset</button>
             <ul>
                 {submittedTasks.map((task, index) => (
