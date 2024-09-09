@@ -1,7 +1,11 @@
 import { useState } from 'react'
 
-const DynamicForm = () => {
+export const DynamicForm = () => {
     const [inputValue, setInputValue] = useState('')
+
+    const handleReset = () => setInputValue('')
+
+    console.log('Component rendered with input:', inputValue)
   
     return (
         <>
@@ -11,7 +15,10 @@ const DynamicForm = () => {
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Enter task for The Barn"
             />
-            <p></p>
+            <p>Task: {inputValue}</p>
+            <button onClick={handleReset}>Reset</button>
         </>
   )
 }
+
+
