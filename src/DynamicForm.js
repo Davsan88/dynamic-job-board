@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 export const DynamicForm = () => {
     const [inputValue, setInputValue] = useState('')
-    const [submittedTasks, setSubmittedTasks] = useState('')
+    const [submittedTasks, setSubmittedTasks] = useState([])
 
     const handleReset = () => setInputValue('')
 
