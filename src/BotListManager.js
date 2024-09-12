@@ -4,6 +4,7 @@ const BotListManager = () => {
     const [bots, setBots] = useState([
         {id: 1, name: 'Bot Mackey', status: 'Active', task: 'Negotiation'},
         {id: 2, name: 'Bot Vedrell', status: 'Active', task: 'Hide'},
+        {id: 3, name: 'Bot Gardocki', status: 'Active', task: 'Interrogation'},
         
 
     ])
