@@ -22,7 +22,7 @@ const BotListManager = () => {
       const newBot = {
         id: bot.id + 1,  // Assign a new unique ID
         name: name,
-        status: 'Stopped',
+        status: 'Stopped',  // Default status is "Stopped"
         task: task
       }
     }
