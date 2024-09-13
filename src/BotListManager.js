@@ -20,7 +20,7 @@ const BotListManager = () => {
     // Step 4: Function to add a new bot to the list
     const addBot = (name, task) => {
       const newBot = {
-        id: bot.id + 1,  // Assign a new unique ID
+        id: bots.length + 1,  // Assign a new unique ID
         name: name,
         status: 'Stopped',  // Default status is "Stopped"
         task: task
