@@ -4,7 +4,7 @@ const BotListManager = () => {
     // Step 1: Initialize the bots state with some initial bot objects
     const [bots, setBots] = useState([
         {id: 1, name: 'Bot Mackey', status: 'Running', task: 'Negotiation'},
-        {id: 2, name: 'Bot Vedrell', status: 'Running', task: 'Hide'},
+        {id: 2, name: 'Bot Vendrell', status: 'Running', task: 'Hide'},
         {id: 3, name: 'Bot Gardocki', status: 'Running', task: 'Interrogation'},
         {id: 4, name: 'Bot Lemansky', status: 'Stopped', task: 'Support'},
     ])
@@ -45,6 +45,8 @@ const BotListManager = () => {
             <p>Task: {bot.task}</p>  {/* Display bot's task */}
             {/* Step 7: Conditionally style bot status */}
             <p>Status: <span style={{ color: bot.status === 'Running' ? 'green' : 'red'}}>{bot.status}</span></p>
+            <button onClick={() => }></button>
+            <button onClick={() => }></button>
           </li>
         ))}
       </ul>
