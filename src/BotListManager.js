@@ -11,7 +11,7 @@ const BotListManager = () => {
 
     // Step 2: Function to trigger a job for a bot and change its status to "Running"
     const triggerJob = (id) => {
-
+        // Step 3: Map through the bots array to update the status of the clicked bot
         setBots(bots.map(bot =>
           bot.id === id ? { ...bot, status: 'Running' } : bot
         ))
