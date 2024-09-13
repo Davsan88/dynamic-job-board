@@ -67,7 +67,7 @@ const NewBotForm = ({ onAddBot }) => {
     e.preventDefault()  // Prevent form refresh
     if (name && task) {
       onAddBot(name, task)  // Call parent function when form submits
-      setName('')
+      setName('')  // Clear input fields after submit
       setTask('')
     }
   }
