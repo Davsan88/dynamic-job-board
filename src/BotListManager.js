@@ -64,7 +64,7 @@ const NewBotForm = ({ onAddBot }) => {
   const [task, setTask] = useState('')  // State for bot's task
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault()  // Prevent form refresh
     if (name && task) {
       onAddBot(name, task)
       setName('')
