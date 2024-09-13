@@ -80,6 +80,12 @@ const NewBotForm = ({ onAddBot }) => {
       onChange={(e) => setName(e.target.value)}  // Update name state
       placeholder="Enter bot name"
     />
+     <input
+      type='text'
+      value={task}
+      onChange={(e) => setTask(e.target.value)}
+      placeholder='Enter bot task'
+    />
    
   </form>
   )
