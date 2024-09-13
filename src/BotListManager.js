@@ -8,7 +8,12 @@ const BotListManager = () => {
         {id: 4, name: 'Bot Lemansky', status: 'Stopped', task: 'Support'},
     ])
 
-    bots.map([])
+    const triggerJob = (id) => {
+
+        setBots(bots.map(bot =>
+          bot.id === id ? { ...bot, status: 'Running' } : bot
+        ))
+    }
 
   return (
     <div>
