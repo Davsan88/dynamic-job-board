@@ -45,7 +45,7 @@ const BotListManager = () => {
             <p>Task: {bot.task}</p>  {/* Display bot's task */}
             {/* Step 7: Conditionally style bot status */}
             <p>Status: <span style={{ color: bot.status === 'Running' ? 'green' : 'red'}}>{bot.status}</span></p>
-            <button onClick={() => }></button>
+            <button onClick={() => triggerJob(bot.id)}>Trigger Job</button>
             <button onClick={() => }></button>
           </li>
         ))}
