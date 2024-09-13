@@ -50,7 +50,8 @@ const BotListManager = () => {
           </li>
         ))}
       </ul>
-
+      
+      {/* Add form to add a new bot */}
       <NewBotForm onAddBot={addBot} />
     </div>
   )
