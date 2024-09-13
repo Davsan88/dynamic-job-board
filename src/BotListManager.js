@@ -29,7 +29,7 @@ const BotListManager = () => {
     }
 
     // Step 5: Function to delete a bot from the list
-    const deletBot = (id) => {
+    const deleteBot = (id) => {
       setBots(bots.filter(bot => bot.id !== id))  // Remove the bot with the matching ID
     }
 
@@ -46,7 +46,7 @@ const BotListManager = () => {
             {/* Step 7: Conditionally style bot status */}
             <p>Status: <span style={{ color: bot.status === 'Running' ? 'green' : 'red'}}>{bot.status}</span></p>
             <button onClick={() => triggerJob(bot.id)}>Trigger Job</button>  {/* Button to trigger job */}
-            <button onClick={() => }></button>
+            <button onClick={() => deleteJob(bot.id)}></button>
           </li>
         ))}
       </ul>
