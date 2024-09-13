@@ -65,7 +65,7 @@ const NewBotForm = ({ onAddBot }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()  // Prevent form refresh
-    if (name && task) {
+    if (name && task) {  // Check if both 'name' and 'task' values are truthy (not empty)
       onAddBot(name, task)  // Call parent function when form submits
       setName('')  // Clear input fields after submit
       setTask('')
