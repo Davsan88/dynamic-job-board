@@ -83,10 +83,10 @@ const NewBotForm = ({ onAddBot }) => {
       <input
         type='text'
         value={task}
-        onChange={(e) => setTask(e.target.value)}
+        onChange={(e) => setTask(e.target.value)}  // Update task state
         placeholder='Enter bot task'
       />
-      <button type='submit'>Add Bot</button>
+      <button type='submit'>Add Bot</button>  {/* Submit the form */}
 
     </form>
   )
