@@ -63,7 +63,18 @@ const NewBotForm = ({ onAddBot }) => {
   const [name, setName] = useState('')  // State for bot's name
   const [task, setTask] = useState('')  // State for bot's task
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (name && task) {
+      onAddBot(name, task)
+      setName('')
+      setTask('')
+    }
+  }
+
   
-}
+
+  }
+
 
 export default BotListManager
