@@ -42,7 +42,7 @@ const BotListManager = () => {
           <li key={bot.id} style={{ border: '1px solid black', margin: '10px', padding: '10px' }}>
             <h3>{bot.name}</h3>  {/* Display bot's name */}
             <p>ID: {bot.id}</p>  {/* Display bot's ID */}
-            <p>Task: {bot.task}</p>
+            <p>Task: {bot.task}</p>  {/* Display bot's task */}
 
           </li>
         ))}
