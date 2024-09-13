@@ -43,7 +43,8 @@ const BotListManager = () => {
             <h3>{bot.name}</h3>  {/* Display bot's name */}
             <p>ID: {bot.id}</p>  {/* Display bot's ID */}
             <p>Task: {bot.task}</p>  {/* Display bot's task */}
-
+            {/* Step 7: Conditionally style bot status */}
+            <p>Status: <span style={{ color: bot.status === 'Running' ? 'green' : 'red'}}>{bot.status}</span></p>
           </li>
         ))}
       </ul>
