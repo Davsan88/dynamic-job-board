@@ -30,7 +30,7 @@ const BotListManager = () => {
 
     // Step 5: Function to delete a bot from the list
     const deletBot = (id) => {
-      setBots(bots.filter(bot => bot.id !== id))
+      setBots(bots.filter(bot => bot.id !== id))  // Remove the bot with the matching ID
     }
 
   return (
