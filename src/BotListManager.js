@@ -17,6 +17,15 @@ const BotListManager = () => {
         ))
     }
 
+    const addBot = (name, task) => {
+      const newBot = {
+        id: bot.id + 1,
+        name: name,
+        status: 'Stopped',
+        task: task
+      }
+    }
+
   return (
     <div>
       <h2>Mission Bots from The Barn</h2>
