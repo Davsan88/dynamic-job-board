@@ -25,6 +25,7 @@ const BotListManager = () => {
         status: 'Stopped',  // Default status is "Stopped"
         task: task
       }
+      setBots([...bots, newBot])
     }
 
   return (
