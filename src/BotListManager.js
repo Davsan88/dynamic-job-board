@@ -57,4 +57,8 @@ const BotListManager = () => {
   )
 }
 
+
+// Step 8: Form component to add a new bot
+const NewBotForm = ({ onAddBot }) 
+
 export default BotListManager
