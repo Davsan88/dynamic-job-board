@@ -72,6 +72,18 @@ const NewBotForm = ({ onAddBot }) => {
     }
   }
 
+  return (
+  <form onSubmit={handleSubmit}>
+    <input
+      type='text'
+      value={name}
+      onChange={(e) => setName(e.target.value)}  // Update name state
+      placeholder="Enter bot name"
+    />
+   
+  </form>
+  )
+
   
 
   }
