@@ -28,6 +28,10 @@ const BotListManager = () => {
       setBots([...bots, newBot])
     }
 
+    const deletBot = (id) => {
+      setBots(bots.filter(bot => bot.id !== id))
+    }
+
   return (
     <div>
       <h2>Mission Bots from The Barn</h2>
