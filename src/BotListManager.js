@@ -60,8 +60,8 @@ const BotListManager = () => {
 
 // Step 8: Form component to add a new bot
 const NewBotForm = ({ onAddBot }) => {
-  const [name, setName] = useState('')
-  const [task, setTask] = useState('')
+  const [name, setName] = useState('')  // State for bot's name
+  const [task, setTask] = useState('')  // State for bot's task
 }
 
 export default BotListManager
